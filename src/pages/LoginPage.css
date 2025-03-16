@@ -1,0 +1,118 @@
+/* Login Page Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+  }
+  
+  .login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f5;
+  }
+  
+  .form-wrapper {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-switcher {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .form-switcher button {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, border-bottom-color 0.3s;
+    border-radius: 20px; /* Makes the buttons rounded */
+    margin: 0 5px; /* Adds spacing between buttons */
+  }
+  
+  .form-switcher button.active {
+    background-color: #003366;
+    color: #fff;
+    border-bottom-color: #003366;
+  }
+  
+  .form-switcher button:hover:not(.active) {
+    background-color: #e0e0e0;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    color: #003366;
+  }
+  
+  .form-container input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-container .form-btn {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-container .form-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-container p {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+  }
+  
+  .form-container p span {
+    color: #003366;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .form-container p span:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 480px) {
+    .form-switcher {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .form-switcher button {
+      font-size: 0.9rem;
+    }
+  
+    .form-container input,
+    .form-container .form-btn {
+      font-size: 0.9rem;
+    }
+  }
+  

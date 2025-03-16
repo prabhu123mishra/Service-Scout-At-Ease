@@ -1,0 +1,122 @@
+  .hero-section {
+    position: relative;
+    width: 95vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #f9f9f9;
+    border: 1px solid rgb(239, 226, 226);
+    border-radius: 10px;  
+    box-shadow: cyan;
+    text-align: center;
+    
+    margin: 20px auto;
+  }
+  
+  .hero-bg {
+    width: 95vw;  /* Width set to 95% of the viewport width */
+    margin-bottom: 30px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('./image/bg44.jpg');
+    background-size: cover;  /* Ensures the background image covers the whole element */
+    background-repeat: no-repeat;
+    background-position: center;  /* Centers the background image */
+    height: 450px;  /* Set the height of the element */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+  .hero-bg:hover{
+    box-shadow: 5px 8px 6px #787878;
+  } 
+  .hero-slogan {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 3px 4px 4px rgb(90, 87, 85);
+    margin-top: 55px; /* Adjust this value to lower the text */
+}
+  
+  .service-icon img {
+    width: 5px;
+    height: 10px;
+  }
+  
+  .slider {
+    width: 95vw;
+    background: #bfc3b9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 50px;
+    border-radius: 8px;
+   
+  }
+  
+  .arrow-left,
+  .arrow-right {
+    background-color: #ddd;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+  }
+  .arrow-left:hover, .arrow-right:hover {
+    box-shadow: 5px 10px 8px #888888;
+    color: #555; 
+    transform: scale(0.2);
+  } 
+  .arrow-left:disabled,
+  .arrow-right:disabled {
+    cursor: not-allowed;
+    opacity: 0;
+  }
+  
+  .slider-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    transition: transform 0.3s ease-in-out;
+
+    
+  }
+ .slider-item:hover {
+    box-shadow: 5px 10px 8px #9a9292;
+    color: #555; 
+    transition: transform 0.3s ease-in-out; /* its not working have a look*/
+  } 
+  .slider-item {
+    flex: 0 0 calc(100% / 4); /* Adjust to show 3 items */
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+  }
+  
+  .slider-item img {
+    width: 100px;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  .slider-item h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
